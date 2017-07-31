@@ -53,7 +53,8 @@ disqus_username:
 netease_comment: false
 
 # Duoshuo settings
-duoshuo_username: 
+duoshuo_username:http://v2.uyan.cc/code/uyan.js?uid=2140430
+
 # Share component is depend on Comment so we can NOT use share only.
 duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
