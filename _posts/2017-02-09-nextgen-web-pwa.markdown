@@ -15,8 +15,6 @@ tags:
 
 
 
-> 本文首发于[《程序员》](http://geek.csdn.net/news/detail/135595)，发布于 [Hux Blog](https://huangxuan.me)、[前端外刊评论](https://zhuanlan.zhihu.com/FrontendMagazine)，转载请保留链接 ;)
-
 
 ## 下一代 Web 应用？
 
