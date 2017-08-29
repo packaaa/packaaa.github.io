@@ -15,7 +15,7 @@ RSS: false
 zhihu_username:     
 github_username:   packaaa 
 twitter_username:   
-#facebook_username:  huxpro
+#facebook_username:  
 # linkedin_username:  firstname-lastname-idxxxx
 
 
@@ -92,7 +92,6 @@ service-worker: true
 
 # Friends
 friends: [
-    
     {
         title: "乱序",
         href: "http://mida.re/"
