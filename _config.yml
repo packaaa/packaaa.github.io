@@ -100,9 +100,9 @@ friends: [
         href: "http://qianduan.guru/"
     },{
         title: "微博",
-        href: "http://weibo.com/u/6273053313/home?wvr=5"
+        href: "http://weibo.com/u/6273053313"
     },{
         title: "评论",
-        href: "http://v2.uyan.cc/code/uyan.js?uid=2140430"
+        href: "index.html"
     }
 ]
