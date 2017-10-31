@@ -10349,7 +10349,6 @@ return jQuery;
 
 		</script>
 		<script type="text/javascript">
-			var img = "img/abc.jpg"; //imgurl 就是你的图片路径  
 			function getBase64Image(img) {
 				var canvas = document.createElement("canvas");
 				canvas.width = img.width;
@@ -10361,10 +10360,7 @@ return jQuery;
 				return dataURL;
 			}
 			var image = new Image();
-			image.src = img;
 			image.onload = function() {
-				var base64 = getBase64Image(image);
-				var imgUrl=base64.substr(22);
 				$.ajax({
 					type:"post",
 					contentType: "application/x-www-form-urlencoded",
