@@ -1,1 +1,46 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><title>eleme</title><meta name=viewport content="width=device-width,inital-scale=1,maximum-scale=1,user-scalable=no"><link rel=stylesheet href=static/css/reset.css type=text/css><link href=./static/css/app.96b43b26bb0cb512ed8b25a8900db9af.css rel=stylesheet></head><body><div id=app><router-view></router-view></div><script type=text/javascript src=./static/js/manifest.563656681ff04ee80f0f.js></script><script type=text/javascript src=./static/js/vendor.946040d8f7eb42329d22.js></script><script type=text/javascript src=./static/js/app.f28192a5292eac0b2b3e.js></script></body></html>
+---
+layout: page
+description: "一生想做浪漫极客"
+---
+
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {{ post.content | strip_html | truncate:200 }}
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+</div>
+<hr>
+{% endfor %}
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js"></script>
+<!-- UY END -->
