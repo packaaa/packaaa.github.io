@@ -106,3 +106,5 @@ friends: [
         href: "index.html"
     }
 ]
+
+theme: jekyll-theme-cayman
